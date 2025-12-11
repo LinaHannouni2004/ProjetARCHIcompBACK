@@ -1,0 +1,10 @@
+com\library\recommendation\feign\LoanFeignClient.class
+com\library\recommendation\service\RecommendationService.class
+com\library\recommendation\exception\GlobalExceptionHandler.class
+com\library\recommendation\feign\BookFeignClient.class
+com\library\recommendation\controller\RecommendationController.class
+com\library\recommendation\dto\BookRecommendationDTO.class
+com\library\recommendation\dto\LoanResponseDTO.class
+com\library\recommendation\dto\BookResponseDTO.class
+com\library\recommendation\RecommendationServiceApplication.class
+com\library\recommendation\exception\GlobalExceptionHandler$ErrorResponse.class

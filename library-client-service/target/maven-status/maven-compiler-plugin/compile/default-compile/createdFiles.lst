@@ -1,0 +1,12 @@
+com\library\client\dto\BookWithAuthorDTO.class
+com\library\client\service\ClientService.class
+com\library\client\exception\GlobalExceptionHandler$ErrorResponse.class
+com\library\client\dto\RecommendationResponseDTO.class
+com\library\client\feign\AuthorFeignClient.class
+com\library\client\feign\BookFeignClient.class
+com\library\client\ClientServiceApplication.class
+com\library\client\feign\RecommendationFeignClient.class
+com\library\client\dto\BookResponseDTO.class
+com\library\client\exception\GlobalExceptionHandler.class
+com\library\client\dto\AuthorResponseDTO.class
+com\library\client\controller\ClientController.class

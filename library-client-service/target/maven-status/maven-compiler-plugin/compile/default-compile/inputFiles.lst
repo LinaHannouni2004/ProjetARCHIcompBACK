@@ -1,0 +1,11 @@
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\dto\BookResponseDTO.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\ClientServiceApplication.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\dto\RecommendationResponseDTO.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\service\ClientService.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\feign\AuthorFeignClient.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\feign\RecommendationFeignClient.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\dto\AuthorResponseDTO.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\exception\GlobalExceptionHandler.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\controller\ClientController.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\feign\BookFeignClient.java
+C:\Users\dhiss\Desktop\ArchitectureCOmpoproject\library-client-service\src\main\java\com\library\client\dto\BookWithAuthorDTO.java
