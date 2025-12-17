@@ -1,42 +1,38 @@
 package com.library.book.entity;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.index.Indexed;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "books")
+@Document(collection = "books")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Indexed
     private String title;
 
-    @Column(unique = true, nullable = false)
+    @Indexed(unique = true)
     private String isbn;
 
-    @Column(length = 2000)
     private String description;
 
     private LocalDate publicationDate;
 
     private String category;
 
-    @Column(nullable = false)
     private Integer availableCopies;
 
-    @Column(nullable = false)
     private Integer totalCopies;
 
+    @Indexed
     private Long authorId;
 }
-
-

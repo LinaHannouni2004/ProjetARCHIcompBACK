@@ -2,6 +2,7 @@ com\library\book\controller\BookController.class
 com\library\book\dto\BookWithAuthorDTO.class
 com\library\book\exception\GlobalExceptionHandler$ErrorResponse.class
 com\library\book\dto\AuthorResponseDTO.class
+com\library\book\config\BookModelListener.class
 com\library\book\exception\GlobalExceptionHandler.class
 com\library\book\BookServiceApplication.class
 com\library\book\entity\Book.class
@@ -9,5 +10,6 @@ com\library\book\mapper\BookMapper.class
 com\library\book\service\BookService.class
 com\library\book\mapper\BookMapperImpl.class
 com\library\book\feign\AuthorFeignClient.class
+com\library\book\config\BookModelListener$SequenceCounter.class
 com\library\book\dto\BookDTO.class
 com\library\book\repository\BookRepository.class

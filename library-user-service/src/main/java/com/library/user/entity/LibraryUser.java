@@ -1,32 +1,28 @@
 package com.library.user.entity;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.index.Indexed;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "library_users")
+@Document(collection = "library_users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class LibraryUser {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String fullName;
 
-    @Column(unique = true, nullable = false)
+    @Indexed(unique = true)
     private String email;
 
     private String phone;
 
-    @Column(nullable = false)
     private LocalDateTime createdAt;
 }
-
-

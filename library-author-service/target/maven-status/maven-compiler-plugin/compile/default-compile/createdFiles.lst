@@ -2,9 +2,11 @@ com\library\author\exception\GlobalExceptionHandler$ErrorResponse.class
 com\library\author\AuthorServiceApplication.class
 com\library\author\service\AuthorService.class
 com\library\author\entity\Author.class
+com\library\author\config\AuthorModelListener.class
 com\library\author\dto\AuthorDTO.class
 com\library\author\controller\AuthorController.class
 com\library\author\exception\GlobalExceptionHandler.class
 com\library\author\mapper\AuthorMapperImpl.class
 com\library\author\repository\AuthorRepository.class
 com\library\author\mapper\AuthorMapper.class
+com\library\author\config\AuthorModelListener$SequenceCounter.class

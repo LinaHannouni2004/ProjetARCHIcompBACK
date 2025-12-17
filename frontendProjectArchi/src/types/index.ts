@@ -49,6 +49,8 @@ export interface LoanDTO {
 export interface RecommendationResponseDTO {
     bookId: number;
     title: string;
-    author: string;
-    relevanceScore: number;
+    isbn: string;
+    category: string;
+    borrowCount: number;
+    reason: string;
 }

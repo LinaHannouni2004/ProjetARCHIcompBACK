@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-11T22:58:57+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-12-17T22:16:30+0100",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.44.0.v20251118-1623, environment: Java 21.0.9 (Eclipse Adoptium)"
 )
 @Component
 public class LoanMapperImpl implements LoanMapper {
@@ -23,13 +23,13 @@ public class LoanMapperImpl implements LoanMapper {
 
         LoanDTO loanDTO = new LoanDTO();
 
-        loanDTO.setId( loan.getId() );
-        loanDTO.setUserId( loan.getUserId() );
         loanDTO.setBookId( loan.getBookId() );
         loanDTO.setBorrowDate( loan.getBorrowDate() );
         loanDTO.setDueDate( loan.getDueDate() );
+        loanDTO.setId( loan.getId() );
         loanDTO.setReturnDate( loan.getReturnDate() );
         loanDTO.setStatus( loan.getStatus() );
+        loanDTO.setUserId( loan.getUserId() );
 
         return loanDTO;
     }
@@ -42,13 +42,13 @@ public class LoanMapperImpl implements LoanMapper {
 
         Loan loan = new Loan();
 
-        loan.setId( loanDTO.getId() );
-        loan.setUserId( loanDTO.getUserId() );
         loan.setBookId( loanDTO.getBookId() );
         loan.setBorrowDate( loanDTO.getBorrowDate() );
         loan.setDueDate( loanDTO.getDueDate() );
+        loan.setId( loanDTO.getId() );
         loan.setReturnDate( loanDTO.getReturnDate() );
         loan.setStatus( loanDTO.getStatus() );
+        loan.setUserId( loanDTO.getUserId() );
 
         return loan;
     }

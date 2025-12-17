@@ -1,11 +1,19 @@
 import React from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
-import { BookOpen, Users, User, LayoutDashboard, Bookmark, Menu, X } from 'lucide-react';
+import { Outlet, NavLink, useNavigate } from 'react-router-dom';
+import { BookOpen, Users, User, LayoutDashboard, Bookmark, Menu, X, LogOut, Sparkles } from 'lucide-react';
 import { clsx } from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useAuth } from '../context/AuthContext';
 
 export const Layout: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    const { user, logout } = useAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        logout();
+        navigate('/login');
+    };
 
     const navItems = [
         { to: '/', label: 'Dashboard', icon: LayoutDashboard },
@@ -13,6 +21,7 @@ export const Layout: React.FC = () => {
         { to: '/authors', label: 'Authors', icon: User },
         { to: '/loans', label: 'Loans', icon: Bookmark },
         { to: '/users', label: 'Users', icon: Users },
+        { to: '/recommendations', label: 'Recommendations', icon: Sparkles },
     ];
 
     return (
@@ -42,16 +51,23 @@ export const Layout: React.FC = () => {
                         </NavLink>
                     ))}
                 </nav>
-                <div className="p-4 border-t border-gray-100">
+                <div className="p-4 border-t border-gray-100 space-y-2">
                     <div className="flex items-center space-x-3 text-sm text-gray-500">
                         <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold">
-                            A
+                            {user?.username.charAt(0).toUpperCase()}
                         </div>
                         <div className="flex-1">
-                            <p className="font-medium text-gray-900">Admin User</p>
-                            <p className="text-xs">admin@library.com</p>
+                            <p className="font-medium text-gray-900">{user?.username}</p>
+                            <p className="text-xs">{user?.email}</p>
                         </div>
                     </div>
+                    <button
+                        onClick={handleLogout}
+                        className="w-full flex items-center space-x-2 px-4 py-2 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                    >
+                        <LogOut className="w-4 h-4" />
+                        <span>Logout</span>
+                    </button>
                 </div>
             </aside>
 

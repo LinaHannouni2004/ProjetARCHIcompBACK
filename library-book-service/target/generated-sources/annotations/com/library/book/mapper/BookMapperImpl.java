@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-11T22:58:42+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-12-17T22:16:28+0100",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.44.0.v20251118-1623, environment: Java 21.0.9 (Eclipse Adoptium)"
 )
 @Component
 public class BookMapperImpl implements BookMapper {
@@ -24,15 +24,15 @@ public class BookMapperImpl implements BookMapper {
 
         BookDTO bookDTO = new BookDTO();
 
-        bookDTO.setId( book.getId() );
-        bookDTO.setTitle( book.getTitle() );
-        bookDTO.setIsbn( book.getIsbn() );
-        bookDTO.setDescription( book.getDescription() );
-        bookDTO.setPublicationDate( book.getPublicationDate() );
-        bookDTO.setCategory( book.getCategory() );
-        bookDTO.setAvailableCopies( book.getAvailableCopies() );
-        bookDTO.setTotalCopies( book.getTotalCopies() );
         bookDTO.setAuthorId( book.getAuthorId() );
+        bookDTO.setAvailableCopies( book.getAvailableCopies() );
+        bookDTO.setCategory( book.getCategory() );
+        bookDTO.setDescription( book.getDescription() );
+        bookDTO.setId( book.getId() );
+        bookDTO.setIsbn( book.getIsbn() );
+        bookDTO.setPublicationDate( book.getPublicationDate() );
+        bookDTO.setTitle( book.getTitle() );
+        bookDTO.setTotalCopies( book.getTotalCopies() );
 
         return bookDTO;
     }
@@ -45,15 +45,15 @@ public class BookMapperImpl implements BookMapper {
 
         Book book = new Book();
 
-        book.setId( bookDTO.getId() );
-        book.setTitle( bookDTO.getTitle() );
-        book.setIsbn( bookDTO.getIsbn() );
-        book.setDescription( bookDTO.getDescription() );
-        book.setPublicationDate( bookDTO.getPublicationDate() );
-        book.setCategory( bookDTO.getCategory() );
-        book.setAvailableCopies( bookDTO.getAvailableCopies() );
-        book.setTotalCopies( bookDTO.getTotalCopies() );
         book.setAuthorId( bookDTO.getAuthorId() );
+        book.setAvailableCopies( bookDTO.getAvailableCopies() );
+        book.setCategory( bookDTO.getCategory() );
+        book.setDescription( bookDTO.getDescription() );
+        book.setId( bookDTO.getId() );
+        book.setIsbn( bookDTO.getIsbn() );
+        book.setPublicationDate( bookDTO.getPublicationDate() );
+        book.setTitle( bookDTO.getTitle() );
+        book.setTotalCopies( bookDTO.getTotalCopies() );
 
         return book;
     }
@@ -80,15 +80,15 @@ public class BookMapperImpl implements BookMapper {
 
         BookWithAuthorDTO bookWithAuthorDTO = new BookWithAuthorDTO();
 
-        bookWithAuthorDTO.setId( book.getId() );
-        bookWithAuthorDTO.setTitle( book.getTitle() );
-        bookWithAuthorDTO.setIsbn( book.getIsbn() );
-        bookWithAuthorDTO.setDescription( book.getDescription() );
-        bookWithAuthorDTO.setPublicationDate( book.getPublicationDate() );
-        bookWithAuthorDTO.setCategory( book.getCategory() );
-        bookWithAuthorDTO.setAvailableCopies( book.getAvailableCopies() );
-        bookWithAuthorDTO.setTotalCopies( book.getTotalCopies() );
         bookWithAuthorDTO.setAuthorId( book.getAuthorId() );
+        bookWithAuthorDTO.setAvailableCopies( book.getAvailableCopies() );
+        bookWithAuthorDTO.setCategory( book.getCategory() );
+        bookWithAuthorDTO.setDescription( book.getDescription() );
+        bookWithAuthorDTO.setId( book.getId() );
+        bookWithAuthorDTO.setIsbn( book.getIsbn() );
+        bookWithAuthorDTO.setPublicationDate( book.getPublicationDate() );
+        bookWithAuthorDTO.setTitle( book.getTitle() );
+        bookWithAuthorDTO.setTotalCopies( book.getTotalCopies() );
 
         return bookWithAuthorDTO;
     }

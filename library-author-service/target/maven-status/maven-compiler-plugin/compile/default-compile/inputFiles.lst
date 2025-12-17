@@ -4,5 +4,6 @@ D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-serv
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\dto\AuthorDTO.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\exception\GlobalExceptionHandler.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\service\AuthorService.java
+D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\config\AuthorModelListener.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\mapper\AuthorMapper.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-author-service\src\main\java\com\library\author\entity\Author.java

@@ -1,5 +1,6 @@
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\entity\LoanStatus.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\mapper\LoanMapper.java
+D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\config\LoanModelListener.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\feign\UserFeignClient.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\repository\LoanRepository.java
 D:\architectureComposantPROback\ArchitectureComposantPROJECT\library-loan-service\src\main\java\com\library\loan\feign\BookFeignClient.java

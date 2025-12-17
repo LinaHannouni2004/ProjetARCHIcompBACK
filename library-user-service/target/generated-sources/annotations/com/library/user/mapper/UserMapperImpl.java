@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-11T22:58:45+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-12-17T22:16:31+0100",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.44.0.v20251118-1623, environment: Java 21.0.9 (Eclipse Adoptium)"
 )
 @Component
 public class UserMapperImpl implements UserMapper {
@@ -23,11 +23,11 @@ public class UserMapperImpl implements UserMapper {
 
         LibraryUserDTO libraryUserDTO = new LibraryUserDTO();
 
-        libraryUserDTO.setId( user.getId() );
-        libraryUserDTO.setFullName( user.getFullName() );
-        libraryUserDTO.setEmail( user.getEmail() );
-        libraryUserDTO.setPhone( user.getPhone() );
         libraryUserDTO.setCreatedAt( user.getCreatedAt() );
+        libraryUserDTO.setEmail( user.getEmail() );
+        libraryUserDTO.setFullName( user.getFullName() );
+        libraryUserDTO.setId( user.getId() );
+        libraryUserDTO.setPhone( user.getPhone() );
 
         return libraryUserDTO;
     }
@@ -40,11 +40,11 @@ public class UserMapperImpl implements UserMapper {
 
         LibraryUser libraryUser = new LibraryUser();
 
-        libraryUser.setId( userDTO.getId() );
-        libraryUser.setFullName( userDTO.getFullName() );
-        libraryUser.setEmail( userDTO.getEmail() );
-        libraryUser.setPhone( userDTO.getPhone() );
         libraryUser.setCreatedAt( userDTO.getCreatedAt() );
+        libraryUser.setEmail( userDTO.getEmail() );
+        libraryUser.setFullName( userDTO.getFullName() );
+        libraryUser.setId( userDTO.getId() );
+        libraryUser.setPhone( userDTO.getPhone() );
 
         return libraryUser;
     }

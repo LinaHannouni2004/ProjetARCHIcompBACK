@@ -92,9 +92,9 @@ public class BookService {
                     .collect(Collectors.toList());
         }
         if (isbn != null && !isbn.isEmpty()) {
-            return bookRepository.searchByIsbn(isbn).stream()
-                    .map(bookMapper::toDTO)
-                    .collect(Collectors.toList());
+            return bookRepository.findByIsbn(isbn)
+                    .map(book -> List.of(bookMapper.toDTO(book)))
+                    .orElse(List.of());
         }
         if (category != null && !category.isEmpty()) {
             return bookRepository.searchByCategory(category).stream()
@@ -131,5 +131,3 @@ public class BookService {
         return book.getAvailableCopies() > 0;
     }
 }
-
-
