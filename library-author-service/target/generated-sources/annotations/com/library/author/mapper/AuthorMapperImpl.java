@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-04T22:16:29+0100",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-12-11T22:58:39+0100",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.44.0.v20251118-1623, environment: Java 21.0.9 (Eclipse Adoptium)"
 )
 @Component
 public class AuthorMapperImpl implements AuthorMapper {
@@ -23,11 +23,11 @@ public class AuthorMapperImpl implements AuthorMapper {
 
         AuthorDTO authorDTO = new AuthorDTO();
 
-        authorDTO.setId( author.getId() );
-        authorDTO.setFirstName( author.getFirstName() );
-        authorDTO.setLastName( author.getLastName() );
         authorDTO.setBio( author.getBio() );
         authorDTO.setBirthDate( author.getBirthDate() );
+        authorDTO.setFirstName( author.getFirstName() );
+        authorDTO.setId( author.getId() );
+        authorDTO.setLastName( author.getLastName() );
 
         return authorDTO;
     }
@@ -40,11 +40,11 @@ public class AuthorMapperImpl implements AuthorMapper {
 
         Author author = new Author();
 
-        author.setId( authorDTO.getId() );
-        author.setFirstName( authorDTO.getFirstName() );
-        author.setLastName( authorDTO.getLastName() );
         author.setBio( authorDTO.getBio() );
         author.setBirthDate( authorDTO.getBirthDate() );
+        author.setFirstName( authorDTO.getFirstName() );
+        author.setId( authorDTO.getId() );
+        author.setLastName( authorDTO.getLastName() );
 
         return author;
     }
