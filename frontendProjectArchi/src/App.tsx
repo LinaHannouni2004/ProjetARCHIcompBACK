@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Layout } from './layout/Layout';
+import { Toaster } from './utils/toast';
 import Dashboard from './pages/Dashboard';
 import Books from './pages/Books';
 import Authors from './pages/Authors';
@@ -14,6 +15,7 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <Toaster />
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={
