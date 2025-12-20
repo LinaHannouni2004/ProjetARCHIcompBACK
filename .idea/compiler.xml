@@ -9,14 +9,13 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
         </processorPath>
         <module name="library-user-service" />
-        <module name="library-book-service" />
         <module name="config-server" />
+        <module name="library-book-service" />
         <module name="library-author-service" />
-        <module name="library-client-service" />
         <module name="discovery-server" />
+        <module name="library-client-service" />
         <module name="library-loan-service" />
         <module name="api-gateway" />
         <module name="recommendation-service" />
